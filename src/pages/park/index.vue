@@ -413,14 +413,19 @@ onMounted(async () => {
     const buildingMesh = model.meshes[0]
     buildingMesh.id = buildingMesh.name = 'building-gltf'
 
+    const fadedMaterial = new PBRMetallicRoughnessMaterial('faded-build', scene)
+    fadedMaterial.baseColor = new Color3(.63, .63, .63)
+    fadedMaterial.metallic = 0
+    fadedMaterial.roughness = .8
+    fadedMaterial.sideOrientation = Material.ClockWiseSideOrientation
+
     function activeBuilding(names: string[] = []) {
       buildings.forEach(building => {
         building.material = names.includes(building.name)
-          ? building.metadata.originalMaterial :
-          fadedMaterial
+          ? building.metadata.originalMaterial 
+          : fadedMaterial
       })
     }
-
     // init buildings list
     model.meshes.forEach(mesh => {
       mesh.freezeWorldMatrix()
@@ -453,11 +458,7 @@ onMounted(async () => {
     })
 
 
-    const fadedMaterial = new PBRMetallicRoughnessMaterial('faded-build', scene)
-    fadedMaterial.baseColor = new Color3(.63, .63, .63)
-    fadedMaterial.metallic = 0
-    fadedMaterial.roughness = .8
-    fadedMaterial.sideOrientation = Material.ClockWiseSideOrientation
+    
 
 
 
@@ -469,9 +470,8 @@ onMounted(async () => {
 
   loadEnvironment()
   const { activeBuilding } =  await loadBuilding()
-  await loadBuilding()
 
-  activeBuilding?.(buildingIds.slice())
+  activeBuilding(buildingIds.slice())
 
   engine.runRenderLoop(() => {
     scene.render()

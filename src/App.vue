@@ -27,8 +27,7 @@ onMounted(() => {
     router.replace('/access/signin')
   }
   else {
-    console.log('ffff')
-    router.replace('/dashboard')
+    
   }
 
 })

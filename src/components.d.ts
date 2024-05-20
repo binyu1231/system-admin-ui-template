@@ -11,8 +11,6 @@ declare module 'vue' {
     BrandList: typeof import('./components/BrandList.vue')['default']
     Button: typeof import('./components/Button.vue')['default']
     Checkbox: typeof import('./components/Checkbox.vue')['default']
-    copy: typeof import('./components/GradientHead copy.vue')['default']
-    Datepicker: typeof import('./components/Datepicker.vue')['default']
     DemoTableFoot: typeof import('./components/DemoTableFoot.vue')['default']
     FormInput: typeof import('./components/FormInput.vue')['default']
     FormLabel: typeof import('./components/FormLabel.vue')['default']
@@ -32,11 +30,6 @@ declare module 'vue' {
     README: typeof import('./components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    Table: typeof import('./components/Table.vue')['default']
     TableContainer: typeof import('./components/TableContainer.vue')['default']
-    Tbl: typeof import('./components/Tbl.vue')['default']
-    TheCounter: typeof import('./components/TheCounter.vue')['default']
-    TheFooter: typeof import('./components/TheFooter.vue')['default']
-    TheInput: typeof import('./components/TheInput.vue')['default']
   }
 }
