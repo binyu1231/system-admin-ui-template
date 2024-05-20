@@ -561,14 +561,15 @@ onMounted(async () => {
 }
 .deco {
   background: linear-gradient(180deg, rgba(60, 28, 125, 0.8), rgba(66, 191, 222, 0.2));
-  @apply fixed z-3 left-0 right-0 top-0 h-44;
+  @apply fixed z-3 inset-0 h-44;
 }
 #canvas-window {
-  position: fixed;
+  @apply fixed inset-0 w-100vw h-100vh z-2;
+  /* position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 2;
+  z-index: 2; */
 }
 </style>

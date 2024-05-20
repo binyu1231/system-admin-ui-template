@@ -122,15 +122,16 @@ onMounted(() => {
 
 <template>
 <PageContainer hidden-deco>
-  <BrandList />
-
-  <div class="relative flex-1 w-full relative">
-    <div ref="container" class="absolute inset-0 z-10"></div>
-    <div class="absolute inset-0 z-20 px-4 py-3">
-      <GlassButton @click="randomSetCylinders">
-        start
-      </GlassButton>
-    </div>
-  </div>
+  
 </PageContainer>
+<BrandList />
+
+<div class="relative flex-1 w-full relative">
+  <div ref="container" class="fixed inset-0 z-2"></div>
+  <div class="absolute inset-0 z-20 px-4 py-3">
+    <GlassButton @click="randomSetCylinders">
+      Random
+    </GlassButton>
+  </div>
+</div>
 </template>

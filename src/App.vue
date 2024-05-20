@@ -13,6 +13,7 @@ import { useRouter } from 'vue-router'
 const { isSignin } = useSystemAccess()
 
 const router = useRouter()
+const route = useRoute()
 
 onMounted(() => {
   toggleDark(true)
@@ -25,9 +26,6 @@ onMounted(() => {
 
   if (!isSignin.value) {
     router.replace('/access/signin')
-  }
-  else {
-    
   }
 
 })

@@ -5,11 +5,6 @@ defineProps<{
 }>()
 
 const slots = useSlots()
-
-onMounted(() => {
-  console.log('sssslot', slots.default?.())
-})
-
 </script>
 
 <template>
