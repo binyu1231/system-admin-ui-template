@@ -1,0 +1,61 @@
+/* Additional styles */
+@import './additional-styles/utility-patterns.css';
+@import './additional-styles/theme.css';
+@import './additional-styles/flatpickr.css';
+
+@font-face {
+    font-family: inter;
+    src: url('~/assets/fonts/Inter.ttf');
+}
+
+@font-face {
+    font-family: noto;
+    src: url('~/assets/fonts/NotoSansMonoCJKsc-Regular.ttf');
+}
+
+/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
+@layer utilities {
+    .rtl {
+        direction: rtl;
+    }
+}
+
+
+body {
+  @apply font-noto;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+  
+}
+
+:root {
+  --scrollbar-width: 8px;
+}
+
+::-webkit-scrollbar{
+  @apply w-2;
+  
+  &:horizontal {
+    @apply h-2;
+  }
+}
+
+
+::-webkit-scrollbar-track{
+  @apply bg-slate-800;
+}
+
+::-webkit-scrollbar-thumb{
+  @apply 
+    bg-slate-700 hover:bg-slate-500
+    rounded-full;
+}

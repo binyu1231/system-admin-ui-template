@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <style>
+    #canvas-window {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+    .bg {
+      background-color: var(--cb-color-glassy-modal);
+      backdrop-filter: blur(4px) brightness(100%);
+    }
+    :root {
+      --cb-color-bg-canvas: #16203c;
+      --cb-color-bg-canvas-inset: #0d1324;
+      --cb-color-file-dropzone-border: #333;
+      --cb-color-inactive: #afafaf;
+      --cb-color-text-danger: #f85149;
+      --cb-color-success: #32a852;
+      --cb-color-card-contrast: #232323;
+      --cb-color-input-border: #d0d0d0;
+      --cb-color-card-border: #303d5c;
+      --cb-color-text-primary: #fff;
+      --cb-color-text-secondary: #f2f2f2;
+      --cb-color-theme-primary: #52baed;
+      --cb-color-bg-card: #2c2c2c;
+      --cb-color-icon-hover-bg: #212c4d;
+      --cb-color-natural-light: #1e2846;
+      --cb-color-input-edited-bg: #2e437c;
+      --fluent-color-text-10: #fff;
+      --fluent-color-text-20: #f2f2f2;
+      --fluent-color-text-30: #a6a6a6;
+      --fluent-color-white: #000;
+      --fluent-color-grey-10: #292d30;
+      --fluent-color-grey-20: #31373e;
+      --fluent-color-grey-30: #434343;
+      --fluent-color-grey-40: #000;
+      --cb-color-glassy-modal: rgba(84, 116, 107, 0.7);
+      --cb-color-modal-border: #303d5c;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cb-behaviors-modal-modal-container bg modalContainer-460 cb-behaviors-modal-draggable draggable-458" style="
+      transform: translate(0px, 0px); 
+      position: fixed; 
+      z-index: 100; 
+      left: 60vw;
+      top: 25vh;
+      display: flex;
+      flex-flow: column;
+      align-items: stretch;
+      width: 340px;
+      max-height: calc(100% - 40px);
+      
+      border-radius: 2px;
+      border: 1px solid var(--cb-color-modal-border);
+      cursor: move;
+      position: absolute;
+      pointer-events: auto;
+      color: var(--fluent-color-text-10);
+    ">
+    <div class="cb-behaviors-modal-modal-header-container modalHeaderContainer-461 handle">
+      <div class="cb-behaviors-modal-modal-header modalHeader-462"
+        style="padding: 12px; display: flex; justify-content: space-between;">
+        <span class="cb-behaviors-modal-modal-title modalTitle-464" id="title1710" style="font-weight: 700"
+          title="HarmonyModule">园区建筑-B1</span>
+      </div>
+      <div class="cb-behaviors-modal-modal-sub-header-pivor modalSubHeaderPivot-463"
+        style="border-bottom: 1px solid rgba(255, 255, 255, 0.2); opacity: 0; padding-bottom: 12px; margin-bottom: 12px;"
+      >
+        <div style="opacity: 0">
+          <div style="opacity: 0" role="tablist" aria-label="Behavior popover mode" class="ms-FocusZone css-124 ms-Pivot root-468"
+            data-focuszone-id="FocusZone1715">
+            <button type="button" id="Pivot1714-Tab0"
+              class="ms-Button ms-Button--action ms-Button--command ms-Pivot-link is-selected linkIsSelected-235"
+              role="tab" aria-selected="true" name="State" data-content="State" data-is-focusable="true" tabindex="0">
+              <span class="ms-Button-flexContainer flexContainer-170" data-automationid="splitbuttonprimary">
+                <span class="ms-Pivot-linkContent linkContent-231">
+                  <span class="ms-Pivot-text text-232">
+                    State</span>
+                </span>
+              </span>
+            </button>
+            <button type="button" id="Pivot1714-Tab1"
+              class="ms-Button ms-Button--action ms-Button--command ms-Pivot-link link-238" role="tab"
+              aria-selected="false" name="All properties" data-content="All properties" data-is-focusable="true"
+              tabindex="-1"><span class="ms-Button-flexContainer flexContainer-170"
+                data-automationid="splitbuttonprimary"><span class="ms-Pivot-linkContent linkContent-231"><span
+                    class="ms-Pivot-text text-232"> All properties</span></span></span></button>
+          </div>
+          <div role="tabpanel" aria-hidden="false" aria-labelledby="Pivot1714-Tab0" class="itemContainer-226">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div  style="opacity: 0" class="cb-behaviors-modal-modal-contents modalContents-465">
+      <div>
+        <div class="cb-behaviors-modal-behavior-section behaviorSection-469">
+          <div id="cb-behavior-section-header-tooltip1757"
+            class="ms-Stack cb-behaviors-modal-behavior-header behaviorHeader-474" tabindex="0">
+            <div class="ms-Stack cb-colorpills-root root-476">
+              <div class="root-498"></div>
+            </div>CO2 Levels
+          </div>
+          <div class="cb-behaviors-modal-widgets-container widgetsContainer-118">
+            <div class="cb-behaviors-modal-widget widget-477">
+              <div class="cb-behaviors-modal-property-widget-container container-479">
+                <div class="cb-behaviors-modal-property-widget-expression-value-container expressionValueContainer-481">
+                  <span class="cb-behaviors-modal-property-widget-expression-value-primary expressionValuePrimary-483"
+                    title="8">8</span>
+                </div><span class="cb-behaviors-modal-property-widget-display-name displayName-480"
+                  title="CO2 Level">CO2
+                  Level</span>
+              </div>
+            </div>
+            <div class="cb-behaviors-modal-widget widget-477">
+              <div class="cb-behaviors-modal-link-widget-container linkContainer-488"><span
+                  class="cb-behaviors-modal-link-widget-label linkLabel-489" title="Mitigation Tactics">Mitigation
+                  Tactics</span><button type="button"
+                  class="ms-Button ms-Button--primary cb-behaviors-modal-link-widget-button linkButton-492"
+                  title="https://contoso.com/co2mitigation" data-is-focusable="true"><span
+                    class="ms-Button-flexContainer flexContainer-130" data-automationid="splitbuttonprimary"><span
+                      class="ms-Button-textContainer textContainer-131"><span class="ms-Button-label label-288"
+                        id="id__1759">Open link</span></span></span></button><i data-icon-name="Link" aria-hidden="true"
+                  class="root-493"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="root-494">
+          <div class="content-495" role="separator" aria-orientation="horizontal"></div>
+        </div>
+      </div>
+      <div>
+        <div class="cb-behaviors-modal-behavior-section behaviorSection-469">
+          <div id="cb-behavior-section-header-tooltip1763"
+            class="ms-Stack cb-behaviors-modal-behavior-header behaviorHeader-474" tabindex="0">
+            <div class="ms-Stack cb-colorpills-root root-476">
+              <div class="root-499"></div>
+            </div>Humidity Level
+          </div>
+          <div class="cb-badgeblock-infoContainer infoContainer-471">
+            <div class="cb-badgeblock-iconCircle iconCircle-496"><i data-icon-name="Frigid" aria-hidden="true"
+                class="root-330"></i></div>
+            <div class="cb-badgeblock-infoTextContainer infoTextContainer-473">Dangerously high temperature to humidity
+              ratio</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="bg" style="position: fixed; z-index: 100; top: 0; left: 0; right: 0; height: 6vh; display: flex; align-items: center;">
+    <h2 style="
+      padding-left: 20px; 
+      color: var(--fluent-color-text-20);
+    ">智慧园区 <small>Digital Park</small></h2>
+  </nav>
+  <aside class="bg" style="position: fixed; z-index: 100; top: 6vh; left: 0; bottom: 0; width: 12vw;">
+  </aside>
+  <canvas id="canvas-window"></canvas>
+  <script type="module" src="./city.ts"></script>
+</body>
+
+</html>
