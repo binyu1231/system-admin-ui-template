@@ -12,6 +12,7 @@ declare module 'vue' {
     Button: typeof import('./components/Button.vue')['default']
     Checkbox: typeof import('./components/Checkbox.vue')['default']
     DemoTableFoot: typeof import('./components/DemoTableFoot.vue')['default']
+    Dropdown: typeof import('./components/Dropdown.vue')['default']
     FormInput: typeof import('./components/FormInput.vue')['default']
     FormLabel: typeof import('./components/FormLabel.vue')['default']
     GlassButton: typeof import('./components/GlassButton.vue')['default']

@@ -19,7 +19,7 @@ withDefaults(
       <slot></slot>
       <span 
         v-if="arrow" 
-        class="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+        class="tracking-normal text-indigo-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
     </span>
     
   </div>
@@ -34,7 +34,7 @@ withDefaults(
 
 .cp-glass-button.active::before {
   content: "";
-  @apply absolute inset-0 bg-purple-500 blur-md;
+  @apply absolute inset-0 bg-indigo-500 blur-md;
 }
 .cp-glass-button-inner {
   @apply 
@@ -67,12 +67,12 @@ withDefaults(
 .cp-glass-button-inner.active {
   
   @apply
-    [background:linear-gradient(theme(colors.purple.500),_theme(colors.purple.500))_padding-box,_linear-gradient(theme(colors.purple.500),_theme(colors.purple.200)_75%,_theme(colors.transparent)_100%)_border-box] 
+    [background:linear-gradient(theme(colors.indigo.500),_theme(colors.indigo.500))_padding-box,_linear-gradient(theme(colors.indigo.500),_theme(colors.indigo.200)_75%,_theme(colors.transparent)_100%)_border-box] 
     /* 
     [background:
-    linear-gradient(theme(colors.purple.500),_theme(colors.purple.500))_padding-box,
-    _linear-gradient(theme(colors.purple.500),
-    _theme(colors.purple.200)_75%,
+    linear-gradient(theme(colors.indigo.500),_theme(colors.indigo.500))_padding-box,
+    _linear-gradient(theme(colors.indigo.500),
+    _theme(colors.indigo.200)_75%,
     _theme(colors.transparent)_100%)_border-box
     ]  
     */

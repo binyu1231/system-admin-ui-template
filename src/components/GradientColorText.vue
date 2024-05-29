@@ -3,7 +3,7 @@
 
 <template>
   <div 
-    class="inline-flex bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200">
+    class="inline-flex bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-200">
     <slot></slot>
   </div>
 </template>

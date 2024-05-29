@@ -77,7 +77,7 @@ const slots = useSlots()
 }
 
 .cp-table-row:nth-of-type(even) td {
-  @apply bg-op-20 bg-purple-500;
+  @apply bg-op-20 bg-indigo-500;
 }
 
 .cp-table-row td {

@@ -89,7 +89,7 @@ function handleModelValueChange (e: any) {
     :disabled="disabled" 
     v-bind="$attrs" />
   
-  <div v-if="_check" class="w-6 h-6 bg-purple-500 box-border border-[6px] rounded-full border-slate-900"></div>
+  <div v-if="_check" class="w-6 h-6 bg-indigo-500 box-border border-[6px] rounded-full border-slate-900"></div>
 
   <div v-else class="w-6 h-6 box-border border-[4px] rounded-full border-slate-900"></div>
 

@@ -84,8 +84,8 @@ function handleModelValueChange (e: any) {
     v-bind="$attrs" />
   <div v-if="_check" class="select-none flex items-center justify-center w-6 h-6 bg-slate-900 rounded-full">
     <svg class="shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-      <path class="fill-purple-500" fill-opacity=".24" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0Z" />
-      <path class="fill-purple-400" fill-rule="nonzero" d="M13 6.586 14.414 8l-5.747 5.748-3.081-3.081L7 9.252l1.667 1.667z" />
+      <path class="fill-indigo-500" fill-opacity=".24" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0Z" />
+      <path class="fill-indigo-400" fill-rule="nonzero" d="M13 6.586 14.414 8l-5.747 5.748-3.081-3.081L7 9.252l1.667 1.667z" />
     </svg>
   </div>
   <div v-else class="w-6 h-6 box-border border-[4px] rounded-full border-slate-900"></div>

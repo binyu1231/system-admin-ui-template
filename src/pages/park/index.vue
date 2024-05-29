@@ -120,8 +120,8 @@ onMounted(async () => {
     console.log('init camera')
     const camera = new ArcRotateCamera(
       'camera', // name
-      0, // alpha horizontal angle
-      Math.PI / 4, // beta vertical angle
+      0, // alpha: horizontal angle
+      Math.PI / 4, // beta: vertical angle
       350, // radius
       new Vector3(-330, 0, -200), // look at
       scene
@@ -278,6 +278,9 @@ onMounted(async () => {
     animateAlphaBetaRadius,
     animateTarget
   } = initCamera()
+
+
+
   initEnvironment()
   initPhotoDome()
   initGround()
@@ -488,14 +491,16 @@ onMounted(async () => {
   </PageContainer>
   <BrandList />
 
-  <div class="overflow-hidden fixed z-30 right-20 top-70 w-120 p-4 pb-8 rounded" style="background: linear-gradient(180deg, rgba(60, 28, 125, 0.8), rgba(60, 28, 125, 0.6), rgba(66, 191, 222, 0.4))">
+  <div 
+    class="overflow-hidden fixed z-30 right-20 top-70 w-120 p-4 pb-8 rounded" 
+    style="background: linear-gradient(180deg, rgba(60, 28, 125, 0.8), rgba(60, 28, 125, 0.6), rgba(66, 191, 222, 0.4))">
     <Particles class="absolute inset-0"  />
     <div class="absolute inset-0 transform pointer-events-none w-[40vw] h-[40vw] rounded-full overflow-hidden [mask-image:_radial-gradient(black,_transparent_60%)]">
         <div class="h-[200%] animate-endless">
           <div class="absolute inset-0 [background:_repeating-linear-gradient(transparent,_transparent_48px,_theme(colors.white)_48px,_theme(colors.white)_49px)] blur-[2px] opacity-20"></div>
-          <div class="absolute inset-0 [background:_repeating-linear-gradient(transparent,_transparent_48px,_theme(colors.purple.500)_48px,_theme(colors.purple.500)_49px)]"></div>
+          <div class="absolute inset-0 [background:_repeating-linear-gradient(transparent,_transparent_48px,_theme(colors.indigo.500)_48px,_theme(colors.indigo.500)_49px)]"></div>
           <div class="absolute inset-0 [background:_repeating-linear-gradient(90deg,transparent,_transparent_48px,_theme(colors.white)_48px,_theme(colors.white)_49px)] blur-[2px] opacity-20"></div>
-          <div class="absolute inset-0 [background:_repeating-linear-gradient(90deg,transparent,_transparent_48px,_theme(colors.purple.500)_48px,_theme(colors.purple.500)_49px)]"></div>
+          <div class="absolute inset-0 [background:_repeating-linear-gradient(90deg,transparent,_transparent_48px,_theme(colors.indigo.500)_48px,_theme(colors.indigo.500)_49px)]"></div>
         </div>
       </div>
     <BrandCard 
@@ -505,7 +510,7 @@ onMounted(async () => {
       unit="℃" />
     <ul>
       <li class="text-slate-100 py-2 font-700 text-lg flex items-center gap-2">
-        <div class="w-2 h-6 bg-purple-500 shadow-purple rounded"></div>
+        <div class="w-2 h-6 bg-indigo-500 shadow-indigo rounded"></div>
         <GradientHead :level="5" class="text-nowrap">
           智能终端设备 
         </GradientHead>
@@ -514,7 +519,7 @@ onMounted(async () => {
         </div>
       </li>
       <li class="text-slate-100 py-2 font-700 text-lg flex items-center gap-2">
-        <div class="w-2 h-6 bg-purple-500 shadow-purple rounded"></div>
+        <div class="w-2 h-6 bg-indigo-500 shadow-indigo rounded"></div>
         <GradientHead :level="5" class="text-nowrap">
           耗电量 
         </GradientHead>

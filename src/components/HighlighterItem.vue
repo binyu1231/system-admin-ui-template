@@ -26,7 +26,7 @@ defineOptions({
     h-96 
     -left-48 
     -top-48
-    bg-purple-500 
+    bg-indigo-500 
     rounded-full 
     opacity-0
     pointer-events-none 

@@ -13,7 +13,7 @@ import { useRouter } from 'vue-router'
 const { isSignin } = useSystemAccess()
 
 const router = useRouter()
-const route = useRoute()
+// const route = useRoute()
 
 onMounted(() => {
   toggleDark(true)

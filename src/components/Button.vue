@@ -31,8 +31,8 @@ const btnClassName = computed(() => {
   @apply 
     text-sm 
     text-white 
-    bg-purple-500  
-    hover:bg-purple-600 
+    bg-indigo-500  
+    hover:bg-indigo-600 
     shadow-sm 
     transition 
     duration-150 
@@ -50,7 +50,7 @@ const btnClassName = computed(() => {
 }
 
 .cp-button-arrow {
-  @apply tracking-normal text-purple-300 transition-transform duration-150 ease-in-out ml-1;
+  @apply tracking-normal text-indigo-300 transition-transform duration-150 ease-in-out ml-1;
 }
 
 

@@ -21,7 +21,7 @@ withDefaults(
       class="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square"
       aria-hidden="true">
       <div
-        class="absolute inset-0 translate-z-0 rounded-full bg-slate-800 group-[.swiper-slide-active]/slide:bg-purple-500 transition-colors duration-500 ease-in-out blur-[60px]">
+        class="absolute inset-0 translate-z-0 rounded-full bg-slate-800 group-[.swiper-slide-active]/slide:bg-indigo-500 transition-colors duration-500 ease-in-out blur-[60px]">
       </div>
     </div>
 
